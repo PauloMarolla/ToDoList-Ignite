@@ -23,7 +23,7 @@ section.task-list {
       gap: 0.25rem;
       align-items: center;
 
-      background: #fff;
+      background: transparent;
       font-size: 16px;
       
       input {
@@ -57,6 +57,10 @@ section.task-list {
         &:hover {
           filter: brightness(0.95);
         }
+        &:disabled {
+          background: #bbb;
+          cursor: not-allowed;
+        }
       }
     }
   }
@@ -71,7 +75,7 @@ section.task-list {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        border-bottom: 1px solid #EBEBEB;
+        border-bottom: 1px solid #5B5B5B;
         padding: 1rem 0;
 
         div {
@@ -151,7 +155,7 @@ section.task-list {
 
           &:hover {
             svg {
-              filter: brightness(0.5)
+              filter: brightness(0.7)
             }
           }
         }
